@@ -22,7 +22,7 @@ module.exports = {
     'client/dist',
     'client/build',
     'client/node_modules',
-    'client/src/store/reducers/generated.ts',
+    'client/store/reducers/generated.ts',
   ],
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
