@@ -6,16 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "generate_api": "rtk-query-codegen-openapi openapi-config.ts",
     "lint:fix": "lint-staged && next lint --fix",
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.2"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.3.0",
+    "@rtk-query/codegen-openapi": "^1.0.0",
     "@types/node": "18.7.16",
     "@types/react": "18.0.19",
     "@types/react-dom": "18.0.6",
