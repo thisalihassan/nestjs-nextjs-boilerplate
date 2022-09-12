@@ -12,7 +12,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
           if (!data) {
             return null;
           }
-          return data.token;
+          return data;
         },
       ]),
       ignoreExpiration: false,
@@ -21,6 +21,10 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   }
 
   async validate(payload: AuthDto) {
-    return { userId: payload.userId, email: payload.email };
+    return {
+      userId: payload.userId,
+      email: payload.email,
+      role: payload.role,
+    };
   }
 }

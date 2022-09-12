@@ -14,22 +14,39 @@ export class AuthenticationController {
     status: 200,
     type: UserEntity,
   })
-  @Post('login')
-  @UseGuards(AuthGuard('local'))
+  @Post('admin/login')
   @ApiBody({ type: LoginDto })
-  async login(
+  @UseGuards(AuthGuard('admin'))
+  async LoginAdmin(
     @Request() req,
     @Res({ passthrough: true }) response: Response<UserEntity>,
   ) {
     const accessToken = await this.authenticationService.loginUser({
       userId: req.user.id,
       email: req.user.email,
+      role: req.user.role,
     });
-    response.cookie(
-      'Authorization',
-      { token: accessToken },
-      { httpOnly: true },
-    );
+    response.cookie('Authorization', accessToken, { httpOnly: true });
+    return req.user;
+  }
+
+  @ApiResponse({
+    status: 200,
+    type: UserEntity,
+  })
+  @Post('user/login')
+  @ApiBody({ type: LoginDto })
+  @UseGuards(AuthGuard('local'))
+  async LoginUser(
+    @Request() req,
+    @Res({ passthrough: true }) response: Response<UserEntity>,
+  ) {
+    const accessToken = await this.authenticationService.loginUser({
+      userId: req.user.id,
+      email: req.user.email,
+      role: req.user.role,
+    });
+    response.cookie('Authorization', accessToken, { httpOnly: true });
     return req.user;
   }
 }
