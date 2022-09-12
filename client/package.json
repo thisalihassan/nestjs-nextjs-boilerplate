@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "lint-staged && next lint --fix"
+    "lint:fix": "lint-staged && next lint --fix",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "12.3.0",
