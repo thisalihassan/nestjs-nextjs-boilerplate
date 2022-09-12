@@ -50,13 +50,13 @@ if you get error on migrations try deleting dist folder, remove db container and
 
 ```bash
 # development
-$ npm run start
+$ npm run dev
 
-# watch mode
-$ npm run start:dev
+# build
+$ npm run build
 
 # production mode
-$ npm run start:prod
+$ npm run start
 
 ```
 
