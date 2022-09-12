@@ -6,9 +6,6 @@ export class LoginDto {
   @IsEmail()
   username: string;
 
-  @ApiProperty({ required: false })
-  subdomain?: string;
-
   @ApiProperty()
   @IsNotEmpty()
   password: string;

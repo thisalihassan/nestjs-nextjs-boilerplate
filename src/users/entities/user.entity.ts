@@ -19,11 +19,11 @@ export class UserEntity extends BaseEntity {
   @ApiProperty()
   id: number;
 
-  @Column({ nullable: false, type: 'varchar' })
+  @Column({ nullable: false })
   @ApiProperty()
   firstName: string;
 
-  @Column({ nullable: false, type: 'varchar' })
+  @Column({ nullable: false })
   @ApiProperty()
   lastName: string;
 
@@ -34,6 +34,10 @@ export class UserEntity extends BaseEntity {
   @Column({ type: 'varchar', nullable: false, unique: true })
   @ApiProperty()
   email: string;
+
+  @Column({ type: 'varchar', nullable: true })
+  @ApiProperty()
+  phoneNo: string;
 
   @Column({
     type: 'enum',

@@ -1,8 +1,12 @@
 import { Controller, Get } from '@nestjs/common';
-@Controller('/hello')
+import { AppService } from './app.service';
+@Controller('/api/seed')
 export class AppController {
+  constructor(private readonly userSeedService: AppService) {}
+
   @Get()
-  getOpenApi(): string {
+  async getHello(): Promise<string> {
+    await this.userSeedService.run();
     return 'Hello, asworld!';
   }
 }
