@@ -5,15 +5,12 @@
     "es6": true
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "import"],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
     "next/core-web-vitals",
     "next",
     "prettier"
@@ -55,11 +52,6 @@
     ]
   },
   "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["./"]
-      }
-    },
     "react": {
       "version": "detect"
     }
