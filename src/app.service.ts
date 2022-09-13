@@ -11,6 +11,7 @@ export class AppService {
       firstName: 'Super',
       lastName: 'Admin',
       email: 'super-admin@example.com',
+      password: 'admin',
       role: UserRole.ADMIN,
     });
   }
