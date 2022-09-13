@@ -36,4 +36,5 @@ lerna-debug.log*
 /client/dist
 /client/build
 /client/node_modules
+/client/swagger.json
 .env
