@@ -50,7 +50,7 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "cookie-parser": "^1.4.6",
-    "dotenv": "^16.0.2",
+    "dotenv": "^16.0.3",
     "helmet": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
     "passport": "^0.6.0",
