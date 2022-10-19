@@ -1,4 +1,4 @@
-import { emptySplitApi as api } from '@client/store/reducers/emptyApi';
+import { emptySplitApi as api } from '@store/reducers/emptyApi';
 const injectedRtkApi = api.injectEndpoints({
   endpoints: (build) => ({
     appControllerGetHello: build.query<
@@ -138,4 +138,3 @@ export const {
   useAuthenticationControllerLoginAdminMutation,
   useAuthenticationControllerLoginUserMutation,
 } = injectedRtkApi;
-export { injectedRtkApi as api };

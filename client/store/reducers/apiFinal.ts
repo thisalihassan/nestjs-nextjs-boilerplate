@@ -1,6 +1,8 @@
-import { api } from './generated';
-const enhancedEmptySplitApi = api?.enhanceEndpoints({
+import { rtk } from '@store/reducers/generated';
+
+const enhancedEmptySplitApi = rtk?.enhanceEndpoints({
   addTagTypes: ['Users'],
   endpoints: {},
 });
-export { enhancedEmptySplitApi as apiVfinal };
+export * from '@store/reducers/generated';
+export { enhancedEmptySplitApi as api };

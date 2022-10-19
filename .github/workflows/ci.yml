@@ -13,7 +13,10 @@ jobs:
         with:
           node-version: "18"
           cache: npm
-      - run: npm ci
+      - run: |
+          npm ci
+          cd client && npm ci
+          cd ../
       - name: Run lint and prettier
         run: |
           npm run lint
