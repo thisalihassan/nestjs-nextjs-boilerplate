@@ -18,10 +18,10 @@ async function bootstrap() {
   app.use(cookieParser());
 
   const config = new DocumentBuilder()
-    .setTitle('Talent Cities')
+    .setTitle('NEXT / NEST.Js Boilerplate')
     .setDescription('The Talent Cities API description')
     .setVersion('1.0')
-    .addTag('talent-cities')
+    .addTag('nextjs-nestjs-boilerplate')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   writeFileSync(
