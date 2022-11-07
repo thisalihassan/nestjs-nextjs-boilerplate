@@ -38,7 +38,7 @@
     "migration:create": "typeorm migration:create"
   },
   "dependencies": {
-    "@nestjs/common": "^9.0.11",
+    "@nestjs/common": "^9.2.0",
     "@nestjs/core": "^9.1.6",
     "@nestjs/jwt": "^9.0.0",
     "@nestjs/mapped-types": "*",
