@@ -12,7 +12,7 @@
     "check": "prettier --check \"backend/**/**/*.ts\" \"client/**/**/*.ts\"",
     "lint:be": "cd ./backend && npm run eslint",
     "lint:fix:be": "cd ./backend && npm run eslint:fix",
-    "precommit": "lint-staged && npm run lint:be",
+    "precommit": "lint-staged && npm run lint:be && npm run lint:ui",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
