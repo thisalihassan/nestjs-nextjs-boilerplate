@@ -23,10 +23,17 @@
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.26.0",
     "eslint-config-next": "13.0.2",
     "eslint-plugin-react": "^7.31.10",
     "sass": "^1.55.0",
     "typescript": "4.8.4"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-thisalihassan:thisalihassan/nestjs-nextjs-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC"
 }

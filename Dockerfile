@@ -2,9 +2,9 @@
 FROM node:18-alpine as backend
 
 WORKDIR /opt/code
-COPY package*.json ./
+COPY /backend/package*.json ./
 
-COPY . ./
+COPY /backend ./
 
 RUN rm -rf client && npm ci && npm run build && npm prune --production
 ENV NODE_ENV production
