@@ -21,7 +21,7 @@
     "@next/eslint-plugin-next": "^13.0.2",
     "@rtk-query/codegen-openapi": "^1.0.0",
     "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
+    "@types/react": "18.2.13",
     "@types/react-dom": "18.0.6",
     "eslint-config-next": "13.0.2",
     "eslint-plugin-react": "^7.31.10",
